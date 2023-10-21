@@ -83,9 +83,14 @@ button, input {
 
 
 /* hero */
+.hero__background {
+    background-image: url(../img/background.jpg);
+    background-color: grey;
+    background-size: cover;
+}
 
 .hero {
-    background-color: aqua;
+    
     height: 100vh;
     display: flex;
     flex-direction: column;
