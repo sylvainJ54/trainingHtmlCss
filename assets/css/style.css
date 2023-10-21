@@ -21,6 +21,11 @@ button, input {
     background-color: transparent;
 }
 
+.background {
+    background-image: url(../img/background.jpg);
+    background-color: grey;
+    background-size: cover;
+}
 /* end reset */
 
 /*start style header */
@@ -33,7 +38,7 @@ button, input {
 }
 
 .header {
-    background-color: grey;
+    
     position: fixed;
     width: 100%;
 }
@@ -83,11 +88,6 @@ button, input {
 
 
 /* hero */
-.hero__background {
-    background-image: url(../img/background.jpg);
-    background-color: grey;
-    background-size: cover;
-}
 
 .hero {
     
