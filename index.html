@@ -9,32 +9,34 @@
   </head>
   <body>
     <!-- start header -->
-    <header class="header">
-      <img src="./assets/img/logo.svg" alt="logo" class="header__logo" />
-      <nav class="header__navbar">
-        <ul class="header__list-link">
-          <li class="header__link">
-            <a href="barbier.html">coiffeur</a>
-          </li>
-          <li class="header__link">
-            <a href="barbier.html">barbier</a>
-          </li>
-          <li class="header__link">
-            <a href="manucure.html">manucure</a>
-          </li>
-          <li class="header__link">
-            <a href="instutue-de-beaute.html">institue de beauté</a>
-          </li>
-          <li class="header__link">
-            <a href="mag.html">mag</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="header__quick-actions">
-        <!-- <input type="button" value="texte de mon bouton" > possibilité de faire un input mais moins facile a styliser -->
-        <button class="header__button" type="button">Ajouter votre etablissement</button>
-        <button class="header__button__black"   type="button">Se connecter</button>
+    <header class="header ">
+      <div class="header__container flux">
+        <img src="./assets/img/logo.svg" alt="logo" class="header__logo" />
+        <nav>
+          <ul class="header__list-link">
+            <li class="header__link">
+              <a href="barbier.html">coiffeur</a>
+            </li>
+            <li class="header__link">
+              <a href="barbier.html">barbier</a>
+            </li>
+            <li class="header__link">
+              <a href="manucure.html">manucure</a>
+            </li>
+            <li class="header__link">
+              <a href="instutue-de-beaute.html">institue de beauté</a>
+            </li>
+            <li class="header__link">
+              <a href="mag.html">mag</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="header__quick-actions">
+          <!-- <input type="button" value="texte de mon bouton" > possibilité de faire un input mais moins facile a styliser -->
+          <button class="button" type="button">Ajouter votre etablissement</button>
+          <button class="button button--black"   type="button">Se connecter</button>
+        </div>
       </div>
     </header>
     <!-- end header -->
@@ -42,13 +44,14 @@
     <!-- start main -->
     <main>
       <!-- start hero (cover) -->
-      <section>
-        <h1>Vos rendez-vous beauté en ligne</h1>
-        <p>Simple • immediat • 24h/24</p>
-        <form action="https://planity.com" method="post">
-          <label>
+      <section class="hero flux">
+        <h1 class="hero__title">Vos rendez-vous beauté en ligne</h1>
+        <p class="hero__description">Simple • immediat • 24h/24</p>
+        <form class="hero__search" action="https://planity.com" method="post">
+          <label class="hero__field hero__label">
             que cherchez-vous? (obligatoire)
             <input
+            class="hero__input"
               type="text"
               value=""
               name="service"
@@ -56,16 +59,17 @@
               required
             />
           </label>
-          <label>
-            Ou ?
+          <label class="hero__field">
+            <span class="hero__label">Ou ?</span>
             <input
+            class="hero__input"
               type="text"
               name="city"
               value=""
               placeholder="Adresse,ville..."
             />
           </label>
-          <button type="submit">rechercher</button>
+          <button class="button button--black" type="submit">rechercher</button>
         </form>
       </section>
       <!-- end hero -->
